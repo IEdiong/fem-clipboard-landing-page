@@ -47,11 +47,11 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: clamp(1.8rem, 7vw, 2rem);
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 7vw, 1.8rem);
   margin-bottom: 0.7em;
 }
 
@@ -90,8 +90,8 @@ p {
 
 /* Content */
 .header {
-  min-height: 670px; /* Change this to use about 670px */
-  margin-top: 7em;
+  min-height: 667px;
+  padding-top: 7em;
 }
 
 .header img {
@@ -108,7 +108,7 @@ p {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2.5em;
+  margin-top: 1.5em;
   min-height: 120px;
 }
 
@@ -247,6 +247,10 @@ p {
   .cta .btn__mac {
     width: 220px;
     padding-inline: 1em;
+  }
+
+  .primary__section {
+    margin-top: 4.3em;
   }
 
   .primary__section:first-child {

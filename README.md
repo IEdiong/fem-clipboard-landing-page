@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/fully-responsive-clipboard-landing-page-v33CMAP3t)
 - Live Site URL: [live site URL](https://iediong.github.io/fem-clipboard-landing-page/)
 
 ## My process

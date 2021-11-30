@@ -35,10 +35,24 @@ img {
   max-width: 100%;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-weight: 600;
-  font-size: 2.2rem;
   line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.7em;
 }
 
 a {
@@ -59,9 +73,19 @@ a {
   justify-content: center;
 }
 
+.mb-2 {
+  margin-bottom: 2em;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Content */
 .header {
-  min-height: 100vh; /* Change this to use about 670px */
+  min-height: 670px; /* Change this to use about 670px */
   margin-top: 7em;
 }
 
@@ -99,4 +123,40 @@ a {
 
 .btn__mac {
   background-color: var(--l-blue);
+}
+
+.primary__section {
+  margin-top: 8em;
+}
+
+.primary__section .ps__title {
+  margin-bottom: 0.8em;
+}
+
+.primary__section .ps__text {
+  margin-bottom: 5em;
+}
+
+.feature__img {
+  margin-bottom: 3em;
+}
+
+.fc__group {
+  margin-top: 4.5em;
+}
+
+.workflow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.workflow img {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
+.company__logo {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }

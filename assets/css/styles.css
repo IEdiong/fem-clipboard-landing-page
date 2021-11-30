@@ -112,7 +112,6 @@ p {
   min-height: 120px;
 }
 
-/* TODO: Work on box-shadow (inset) */
 .cta .btn__ios,
 .cta .btn__mac {
   width: 345px;
@@ -122,14 +121,17 @@ p {
   padding-bottom: 0.5em;
   padding-inline: 2em;
   border-radius: 50px;
+  transition: all 0.5s cubic-bezier(0.33, 0.53, 1, 1);
 }
 
 .btn__ios {
   background-color: var(--strong-cyan);
+  box-shadow: inset 0 -0.1em hsl(171, 26%, 41%), 0 2px 10px var(--strong-cyan);
 }
 
 .btn__mac {
   background-color: var(--l-blue);
+  box-shadow: inset 0 -0.1em hsl(233, 39%, 36%), 0 2px 10px var(--l-blue);
 }
 
 .primary__section {
@@ -209,6 +211,7 @@ p {
 .nav__links a,
 .social__links a {
   color: var(--d-grayish-blue);
+  transition: color 0.5s cubic-bezier(0.33, 0.53, 1, 1);
 }
 
 .social {
@@ -274,6 +277,44 @@ p {
   .secondary__section--super {
     display: flex;
     column-gap: 3em;
+  }
+
+  .footer {
+    padding-top: 0;
+    text-align: left;
+  }
+
+  .nav__links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1em);
+    grid-auto-flow: column;
+    align-items: center;
+    column-gap: 3.2em;
+    row-gap: 1.4em;
+  }
+
+  .nav__links li {
+    margin-top: 0;
+  }
+
+  .social__links {
+    padding-bottom: 0;
+  }
+
+  .nav__links a:hover,
+  .social__links a:hover {
+    color: var(--strong-cyan);
+  }
+
+  .btn__ios:hover {
+    background-color: hsl(171, 69%, 72%);
+    box-shadow: 0 1px 20px var(--strong-cyan);
+  }
+
+  .btn__mac:hover {
+    background-color: hsl(233, 60%, 76%);
+    box-shadow: 0 1px 20px var(--l-blue);
   }
 }
 

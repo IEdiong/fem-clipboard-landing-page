@@ -19,4 +19,84 @@
 body {
   font-size: 1.125rem;
   font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  /* TODO: Revisit the background */
+  background: url('../../images/bg-header-mobile.png') no-repeat;
+  background-position: center top;
+  background-size: contain;
+  color: var(--d-grayish-blue);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 1.2;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+/* Utility classes  */
+.container {
+  width: 93%;
+  max-width: 1176px;
+  margin-inline: auto;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Content */
+.header {
+  min-height: 100vh; /* Change this to use about 670px */
+  margin-top: 7em;
+}
+
+.header img {
+  width: 8em;
+}
+
+.header h1 {
+  margin-top: 1.5em;
+  margin-bottom: 0.7em;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 2.5em;
+  min-height: 120px;
+}
+
+/* TODO: Work on box-shadow (inset) */
+.cta .btn__ios,
+.cta .btn__mac {
+  font-weight: 600;
+  color: #ffffff;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-inline: 2em;
+  border-radius: 50px;
+}
+
+.btn__ios {
+  background-color: var(--strong-cyan);
+}
+
+.btn__mac {
+  background-color: var(--l-blue);
 }

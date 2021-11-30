@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
+    <!-- <style>
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -26,14 +26,19 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
-    </style>
+    </style> -->
   </head>
   <body>
-    <header>
-      <img src="./images/logo.svg" alt="logo" />
-      <h1>A history of everything you copy</h1>
-      <p>Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
-      <div class="cta"><a href="">Download for iOS</a><a href="">Download for Mac</a></div>
+    <header class="header">
+      <div class="center"><img src="./images/logo.svg" alt="logo" /></div>
+      <div class="container">
+        <h1>A history of everything you copy</h1>
+        <p>Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.</p>
+        <div class="cta">
+          <a href="#" class="btn__ios">Download for iOS</a>
+          <a href="#" class="btn__mac">Download for Mac</a>
+        </div>
+      </div>
     </header>
     <main>
       <section>
@@ -41,13 +46,12 @@
         <p>Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.</p>
         <section>
           <div class="feature__img">
-            <img src="./images/image-computer.png" alt="computer">
+            <img src="./images/image-computer.png" alt="computer" />
           </div>
           <div class="feature__content">
             <div>
               <h3>Quick Search</h3>
-              <p>Easily
-                search your snippets by content, category, web address, application, and more.</p>
+              <p>Easily search your snippets by content, category, web address, application, and more.</p>
             </div>
             <div>
               <h3>iCloud Sync</h3>
@@ -55,8 +59,7 @@
             </div>
             <div>
               <h3>Complete History</h3>
-              <p>Retrieve any snippets from the first moment you started using the
-                app.</p>
+              <p>Retrieve any snippets from the first moment you started using the app.</p>
             </div>
           </div>
         </section>
@@ -67,7 +70,7 @@
         <h2>Access Clipboard anywhere</h2>
         <p>Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
         <div class="img__box">
-          <img src="./images/image-devices.png" alt="devices">
+          <img src="./images/image-devices.png" alt="devices" />
         </div>
       </section>
 
@@ -86,8 +89,7 @@
           </div>
           <div class="new">
             <h3>Sneak preview</h3>
-            <p>Quick preview of all snippets on your
-              Clipboard for easy access.</p>
+            <p>Quick preview of all snippets on your Clipboard for easy access.</p>
           </div>
         </section>
       </section>
@@ -97,17 +99,14 @@
         <h2>Clipboard for iOS and Mac OS</h2>
         <p>Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.</p>
         <div class="cta">
-          <a href="">Download for iOS</a>
-          <a href="">Download for Mac</a>
+          <a href="#" class="btn__ios">Download for iOS</a>
+          <a href="#" class="btn__mac">Download for Mac</a>
         </div>
       </section>
     </main>
-                
-              
-      
 
     <footer>
-      <div class="sec-nav">
+      <nav class="sec-nav">
         <ul>
           <li><a href="">FAQs</a></li>
           <li><a href="">Contact Us</a></li>
@@ -115,13 +114,13 @@
           <li><a href="">Press Kit</a></li>
           <li><a href="">Install Guide</a></li>
         </ul>
-      </div>
+      </nav>
 
-      <div class="socials">
+      <div class="social__links">
         <ul>
           <li><a href="">f</a></li>
           <li><a href="">t</a></li>
-          <li><a href=""i</a></li>
+          <li><a href="">i</a></li>
         </ul>
       </div>
       <p class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.</p>
